@@ -32,11 +32,8 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-
     void Update()
     {
-
-
         moveInput.x = Input.GetAxis("Horizontal");
         moveInput.y = Input.GetAxis("Vertical");
         transform.position += moveInput * moveSpeed * Time.deltaTime;
@@ -51,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
                 charectorSR.transform.localScale = new Vector3(-1, 1, 0);
         }
     }
+    
     public void TakeDamage(int damage)
     {
         currentArmor -= damage;
@@ -66,18 +64,17 @@ public class PlayerMovement : MonoBehaviour
         }
         armorBar.UpdateBar(currentArmor, maxArmor);
     }
-
-   
+    
     public void Death()
     {
         Destroy(gameObject);
     }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("bulletEnemy"))
         {
             TakeDamage(1);
-
         }
     }
 }
