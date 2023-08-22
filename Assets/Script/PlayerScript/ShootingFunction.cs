@@ -6,7 +6,7 @@ public class ShootingFunction : MonoBehaviour
 {
     public GameObject bullet;
     public Transform firePos;
-    public float TimeBtwFire = 0.2f;
+    public float TimeBtwFire ;
     public float bulletForce;
 
     public GameObject fireEffect;
