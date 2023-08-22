@@ -14,6 +14,9 @@ public class PlayerMovement : MonoBehaviour
     int currentHealth;
     public HealthBar healthBar;
     public UnityEvent OnDeath;
+    public ArmorBar armorBar;
+    [SerializeField] int maxArmor;
+    int currentArmor;
 
     private void OnEnable()
     {
@@ -24,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.UpdateBar(currentHealth, maxHealth);
+        currentArmor = maxArmor;
+        armorBar.UpdateBar(currentArmor, maxArmor);
 
     }
 
@@ -46,17 +51,23 @@ public class PlayerMovement : MonoBehaviour
                 charectorSR.transform.localScale = new Vector3(-1, 1, 0);
         }
     }
-
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        if (currentHealth < 0)
+        currentArmor -= damage;
+        if (currentArmor < 0)
         {
-            currentHealth = 0;
-            OnDeath.Invoke();
+            currentHealth -= damage;
+            if (currentHealth <= 0)
+            {
+                currentHealth = 0;
+                OnDeath.Invoke();
+            }
+            healthBar.UpdateBar(currentHealth, maxHealth);
         }
-        healthBar.UpdateBar(currentHealth, maxHealth);
+        armorBar.UpdateBar(currentArmor, maxArmor);
     }
+
+   
     public void Death()
     {
         Destroy(gameObject);
