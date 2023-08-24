@@ -1,0 +1,369 @@
+fileFormatVersion: 2
+guid: cd5dbe13b777d5c489cfceaff9616c82
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 700
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_0"
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1222
+        width: 424
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1461c372a32cfd4b879fbac4ca80b4c
+      internalID: 1521187643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_1"
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1222
+        width: 423
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a360923902b034fb9e7bd486ca1df3
+      internalID: -1943777090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_2"
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 1222
+        width: 420
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc749055670c6ba42884c1651c94fed1
+      internalID: 2110752225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_3"
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 262
+        width: 424
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d5853f2a1ff5941bcf4b7550f6e589
+      internalID: 1480112805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_4"
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 262
+        width: 424
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e403d6246a82564f8928997b223bccb
+      internalID: 379713603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_5"
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 262
+        width: 420
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19d496afe3aada4fb9ba7953b30e81a
+      internalID: 1382183121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_6"
+      rect:
+        serializedVersion: 2
+        x: 2618
+        y: 262
+        width: 424
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63b967bb44d75a4a9fe36763d5f9a9f
+      internalID: -2067652187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_7"
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 262
+        width: 423
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051414cb9de82734cbe40d9735b2f244
+      internalID: -268578138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_8"
+      rect:
+        serializedVersion: 2
+        x: 4183
+        y: 262
+        width: 434
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64e84bff02d7234ea352e90bf13b863
+      internalID: -651429922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_9"
+      rect:
+        serializedVersion: 2
+        x: 4975
+        y: 262
+        width: 423
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265cbcd33423b274ca886daaac844f26
+      internalID: -1061891585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_10"
+      rect:
+        serializedVersion: 2
+        x: 5759
+        y: 262
+        width: 423
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fae023d569b994b99bcc83f59745c4
+      internalID: 898545333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_0": 1521187643
+      "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_1": -1943777090
+      "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_10": 898545333
+      "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_2": 2110752225
+      "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_3": 1480112805
+      "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_4": 379713603
+      "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_5": 1382183121
+      "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_6": -2067652187
+      "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_7": -268578138
+      "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_8": -651429922
+      "chuy\u1EC3n-\u0111\u1ED9ng-nv-ch\xEDnh_9": -1061891585
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

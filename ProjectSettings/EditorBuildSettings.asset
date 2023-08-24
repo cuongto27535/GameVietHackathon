@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChonMan/Man5.unity
     guid: 87b8bd41bebe9f14e9dbff9ae6fdce22
+  - enabled: 1
+    path: Assets/Scenes/Menu/Huongdan.unity
+    guid: 0e9c3750c9a287b4f937e4b3123d07bb
   m_configObjects: {}
