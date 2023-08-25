@@ -36,10 +36,4 @@ public class BoxTouch : MonoBehaviour
             
         }
     }
-
-    private void TurnOffFunction()
-    {
-        codeMovement.enabled = isAnswer;
-        codeFire.enabled = isAnswer;
-    }
 }
