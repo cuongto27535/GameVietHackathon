@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class BoxTouch : MonoBehaviour
 {
-    public PlayerMovement codeMovement;
-    public ShootingFunction codeFire;
-    private bool isAnswer = true;
-    
     void Start()
     {
         
