@@ -77,4 +77,5 @@ public class PlayerMovement : MonoBehaviour
             TakeDamage(1);
         }
     }
+    
 }
