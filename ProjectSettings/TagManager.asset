@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - bulletEnemy
   - Box
+  - dan
   layers:
   - Default
   - TransparentFX
