@@ -52,9 +52,11 @@ public class PlayerMovement : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentArmor -= damage;
+        
         if (currentArmor < 0)
         {
             currentHealth -= damage;
+            currentArmor = 0;
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
@@ -64,6 +66,8 @@ public class PlayerMovement : MonoBehaviour
         }
         armorBar.UpdateBar(currentArmor, maxArmor);
     }
+    
+    
     
     public void Death()
     {
