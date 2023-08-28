@@ -22,6 +22,7 @@ public class MenuOnClick : MonoBehaviour
         MenuOpen.Instance.showMenu(() =>
         {
             MenuOpen.Instance.Hide();
+           
         }, () =>
         {
             SceneManager.LoadScene("Menu");
