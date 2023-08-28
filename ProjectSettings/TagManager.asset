@@ -12,6 +12,8 @@ TagManager:
   - Enemy
   - bulletEnemy
   - Box
+  - vatphamhoimau
+  - vatphamhoigiap
   layers:
   - Default
   - TransparentFX

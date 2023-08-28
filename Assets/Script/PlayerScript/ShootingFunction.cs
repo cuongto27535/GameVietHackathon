@@ -6,8 +6,9 @@ public class ShootingFunction : MonoBehaviour
 {
     public GameObject bullet;
     public Transform firePos;
-    public float TimeBtwFire ;
+    public float TimeBtwFire;
     public float bulletForce;
+    public int bullets = 30;
 
     public GameObject fireEffect;
 
@@ -20,30 +21,41 @@ public class ShootingFunction : MonoBehaviour
         timeBtwFire -= Time.deltaTime;
         if (Input.GetMouseButton(0))
         {
-            Fire();
+            if (bullets > 0)
+            {
+                Fire();
+                bullets--;
+            }
         }
-    }
-    void RotateGun()
-    {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector2 lookDir = mousePos - transform.position;
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (bullets < 30)
+            {
+                bullets = 30;
+            }
+        }
+   void RotateGun()
+        {
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 lookDir = mousePos - transform.position;
+            float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
 
-        Quaternion rotation = Quaternion.Euler(0, 0, angle);
-        transform.rotation = rotation;
+            Quaternion rotation = Quaternion.Euler(0, 0, angle);
+            transform.rotation = rotation;
 
-        if (transform.eulerAngles.z > 90 && transform.eulerAngles.z < 270)
-            transform.localScale = new Vector3(1, -1, 0);
-        else transform.localScale = new Vector3(1, 1, 0);
+            if (transform.eulerAngles.z > 90 && transform.eulerAngles.z < 270)
+                transform.localScale = new Vector3(1, -1, 0);
+            else transform.localScale = new Vector3(1, 1, 0);
 
-    }
-    void Fire()
-    {
-        timeBtwFire = TimeBtwFire;
-        GameObject bulletTmp = Instantiate(bullet, firePos.position, Quaternion.identity);
-        Instantiate(fireEffect, firePos.position, transform.rotation, transform);
-        Rigidbody2D rb = bulletTmp.GetComponent<Rigidbody2D>();
-        rb.AddForce(transform.right * bulletForce, ForceMode2D.Impulse);
+        }
+   void Fire()
+        {
+            timeBtwFire = TimeBtwFire;
+            GameObject bulletTmp = Instantiate(bullet, firePos.position, Quaternion.identity);
+            Instantiate(fireEffect, firePos.position, transform.rotation, transform);
+            Rigidbody2D rb = bulletTmp.GetComponent<Rigidbody2D>();
+            rb.AddForce(transform.right * bulletForce, ForceMode2D.Impulse);
 
+        }
     }
 }

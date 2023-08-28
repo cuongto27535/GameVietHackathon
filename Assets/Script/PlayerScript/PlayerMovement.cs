@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -69,12 +70,42 @@ public class PlayerMovement : MonoBehaviour
     {
         Destroy(gameObject);
     }
-    
+    public void TakeHeath(int heath)
+    {
+            if (currentHealth <10)
+            {
+               currentHealth += heath;
+            }
+            healthBar.UpdateBar(currentHealth, maxHealth);
+    }
+
+    public void TakeArmor()
+    {
+        if (currentArmor < 5)
+        {
+            currentArmor = maxArmor;
+        }
+        armorBar.UpdateBar(currentArmor, maxArmor);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("bulletEnemy"))
         {
             TakeDamage(1);
         }
+
+        if(collision.gameObject.CompareTag("vatphamhoimau"))
+        {
+            TakeHeath(5);
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("vatphamhoigiap"))
+        {
+            TakeArmor();
+            Destroy(collision.gameObject);
+        }
     }
+
+   
 }

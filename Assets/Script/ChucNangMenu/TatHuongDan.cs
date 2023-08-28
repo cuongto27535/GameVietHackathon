@@ -8,9 +8,11 @@ public class TatHuongDan : MonoBehaviour
     void Start()
     {
         canvasObject.SetActive(true);
+        Time.timeScale = 0;
     }
     public void Huongdan()
     {
-        canvasObject.SetActive(false);
+       canvasObject.SetActive(false);
+       Time.timeScale = 1;
     }
 }
