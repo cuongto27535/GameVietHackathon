@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public ArmorBar armorBar;
     [SerializeField] int maxArmor;
     int currentArmor;
+    
 
     private void OnEnable()
     {
@@ -49,13 +50,15 @@ public class PlayerMovement : MonoBehaviour
                 charectorSR.transform.localScale = new Vector3(-1, 1, 0);
         }
     }
-    
+
     public void TakeDamage(int damage)
     {
         currentArmor -= damage;
+
         if (currentArmor < 0)
         {
             currentHealth -= damage;
+            currentArmor = 0;
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
@@ -65,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
         }
         armorBar.UpdateBar(currentArmor, maxArmor);
     }
-    
+
     public void Death()
     {
         Destroy(gameObject);
@@ -97,12 +100,17 @@ public class PlayerMovement : MonoBehaviour
 
         if(collision.gameObject.CompareTag("vatphamhoimau"))
         {
-            TakeHeath(5);
+            TakeHeath(1);
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.CompareTag("vatphamhoigiap"))
         {
             TakeArmor();
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("vatphamhoimausieucap"))
+        {
+            TakeHeath(maxHealth);
             Destroy(collision.gameObject);
         }
     }

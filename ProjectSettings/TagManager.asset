@@ -14,6 +14,8 @@ TagManager:
   - Box
   - vatphamhoimau
   - vatphamhoigiap
+  - vatcan
+  - vatphamhoimausieucap
   layers:
   - Default
   - TransparentFX
@@ -21,7 +23,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - chuongngaivat
   - 
   - 
   - 
