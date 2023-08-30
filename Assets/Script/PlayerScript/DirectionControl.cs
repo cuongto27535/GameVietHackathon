@@ -22,5 +22,10 @@ public class DirectionControl : MonoBehaviour
             Destroy(gameObject);
 
         }
+        if (other.gameObject.CompareTag("vatcan"))
+        {
+            Destroy(gameObject);
+
+        }
     }
 }

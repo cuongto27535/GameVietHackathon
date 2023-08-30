@@ -8,12 +8,21 @@ public class ShootingFunction : MonoBehaviour
     public Transform firePos;
     public float TimeBtwFire;
     public float bulletForce;
-    public int bullets = 30;
+    
+   
+    public BulletBar bulletBar;
+    [SerializeField] int maxBullet;
+    int currentBullet;
 
     public GameObject fireEffect;
 
     private float timeBtwFire;
 
+     void Start()
+    {
+        currentBullet = maxBullet;
+        bulletBar.UpdateBar(currentBullet, maxBullet);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -21,18 +30,23 @@ public class ShootingFunction : MonoBehaviour
         timeBtwFire -= Time.deltaTime;
         if (Input.GetMouseButton(0))
         {
-            if (bullets > 0)
+          
+            if (currentBullet > 0)
             {
                 Fire();
-                bullets--;
+                currentBullet--;
+               
             }
+            bulletBar.UpdateBar(currentBullet, maxBullet);
+
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            if (bullets < 30)
+            if (currentBullet < 30)
             {
-                bullets = 30;
+                currentBullet = 30;
             }
+            bulletBar.UpdateBar(currentBullet, maxBullet);
         }
    void RotateGun()
         {
@@ -55,6 +69,7 @@ public class ShootingFunction : MonoBehaviour
             Instantiate(fireEffect, firePos.position, transform.rotation, transform);
             Rigidbody2D rb = bulletTmp.GetComponent<Rigidbody2D>();
             rb.AddForce(transform.right * bulletForce, ForceMode2D.Impulse);
+            
 
         }
     }

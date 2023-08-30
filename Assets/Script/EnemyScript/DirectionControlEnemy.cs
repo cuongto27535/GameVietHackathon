@@ -22,5 +22,10 @@ public class DirectionControlEnemy : MonoBehaviour
             Destroy(gameObject);
 
         }
+        if (other.gameObject.CompareTag("vatcan"))
+        {
+            Destroy(gameObject);
+
+        }
     }
 }

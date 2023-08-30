@@ -10,9 +10,12 @@ public class TatHuongDan : MonoBehaviour
         canvasObject.SetActive(true);
         Time.timeScale = 0;
     }
-    public void Huongdan()
+     void Update()
     {
-       canvasObject.SetActive(false);
-       Time.timeScale = 1;
+        if(Input.GetKeyDown(KeyCode.F)) {
+            canvasObject.SetActive(false);
+            Time.timeScale = 1;
+        }
     }
+   
 }
