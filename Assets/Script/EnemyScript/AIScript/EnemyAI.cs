@@ -40,6 +40,7 @@ public class EnemyAI : MonoBehaviour
         target = FindObjectOfType<PlayerMovement>().transform;
 
         InvokeRepeating("CalculatePath", 0f, repeatTimeUpdatePath);
+
     }
 
     private void Update()
