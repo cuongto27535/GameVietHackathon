@@ -13,7 +13,7 @@ public class EnemyAI : MonoBehaviour
     public float repeatTimeUpdatePath = 0.5f;
     public SpriteRenderer characterSR;
     public Animator animator;
-    public bool isShoot = false;
+    
 
     public GameObject bullet;
     public float bulletSpeed;
