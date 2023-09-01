@@ -40,10 +40,10 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("status", moveInput.sqrMagnitude);
         
-        
         if (moveInput.x != 0)
         {
-               
+            AudioManager.Instance.PlaySFX("run");
+
             if (moveInput.x > 0)
                 charectorSR.transform.localScale = new Vector3(1, 1, 0);
             else

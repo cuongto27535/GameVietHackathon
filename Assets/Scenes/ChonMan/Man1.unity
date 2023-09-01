@@ -240,7 +240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MusicSounds:
   - name: Theme
-    Clip: {fileID: 0}
+    Clip: {fileID: 8300000, guid: 209ddf11bda841a459defe4193a0fe5c, type: 3}
   SfxSounds:
   - name: napdan
     Clip: {fileID: 8300000, guid: 59e1940c8afefd24d85735f6112db98f, type: 3}
@@ -1705,7 +1705,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

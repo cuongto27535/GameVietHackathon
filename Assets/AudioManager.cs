@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+            //adc
         }
         else
         {
@@ -53,7 +54,7 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-          SfxSource.PlayOneShot(SfxSource.clip);
+            SfxSource.PlayOneShot(SfxSource.clip);
         }
     }
 }
