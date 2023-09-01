@@ -72,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
     public void Death()
     {
         Destroy(gameObject);
+        GameOverOpen.Instance.Show();
     }
     public void TakeHeath(int heath)
     {
