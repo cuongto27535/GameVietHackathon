@@ -39,9 +39,11 @@ public class PlayerMovement : MonoBehaviour
         transform.position += moveInput * moveSpeed * Time.deltaTime;
 
         animator.SetFloat("status", moveInput.sqrMagnitude);
-
+        
+        
         if (moveInput.x != 0)
         {
+               
             if (moveInput.x > 0)
                 charectorSR.transform.localScale = new Vector3(1, 1, 0);
             else
