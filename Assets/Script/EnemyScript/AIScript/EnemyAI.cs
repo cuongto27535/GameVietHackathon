@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 using UnityEngine.TextCore.Text;
+using UnityEngine.Events;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -13,12 +14,15 @@ public class EnemyAI : MonoBehaviour
     public float repeatTimeUpdatePath = 0.5f;
     public SpriteRenderer characterSR;
     public Animator animator;
-    
 
+    public UnityEvent OnDeathEnemy;
     public GameObject bullet;
     public float bulletSpeed;
     public float timeBullet;
     public float fireCooldown;
+
+    [SerializeField] int maxHealthEnemy;
+    int currentHealthenemy;
 
 
     Path path;
@@ -32,8 +36,13 @@ public class EnemyAI : MonoBehaviour
     public float freezeDurationTime;
     float freezeDuration;
 
+    private void OnEnable()
+    {
+        OnDeathEnemy.AddListener(DeathEnemy);
+    }
     private void Start()
     {
+        currentHealthenemy = maxHealthEnemy;
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         freezeDuration = 0;
@@ -116,11 +125,27 @@ public class EnemyAI : MonoBehaviour
             yield return null;
         }
     }
+    public void TakeDamageEnemy(int damageEnymy)
+    {
+        currentHealthenemy -= damageEnymy;
+        if (currentHealthenemy <= 0)
+            {
+                currentHealthenemy = 0;
+               OnDeathEnemy.Invoke();
+
+        }
+           
+        }
+    public void DeathEnemy()
+    {
+        Destroy(gameObject);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("bullet"))
         {
-           Destroy(gameObject);
+            TakeDamageEnemy(1);
 
         }
     }
