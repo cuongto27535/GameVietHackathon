@@ -47,6 +47,8 @@ public class ShootingFunction : MonoBehaviour
                 currentBullet = 30;
             }
             bulletBar.UpdateBar(currentBullet, maxBullet);
+            AudioManager.Instance.PlaySFX("napdan");
+
         }
    void RotateGun()
         {
@@ -69,7 +71,8 @@ public class ShootingFunction : MonoBehaviour
             Instantiate(fireEffect, firePos.position, transform.rotation, transform);
             Rigidbody2D rb = bulletTmp.GetComponent<Rigidbody2D>();
             rb.AddForce(transform.right * bulletForce, ForceMode2D.Impulse);
-            
+            AudioManager.Instance.PlaySFX("bandan");
+
 
         }
     }

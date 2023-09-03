@@ -44,11 +44,14 @@ public class PlayerMovement : MonoBehaviour
 
         if (moveInput.x != 0)
         {
+
             if (moveInput.x > 0)
                 charectorSR.transform.localScale = new Vector3(1, 1, 0);
             else
                 charectorSR.transform.localScale = new Vector3(-1, 1, 0);
         }
+        
+
     }
 
     public void TakeDamage(int damage)
@@ -101,16 +104,20 @@ public class PlayerMovement : MonoBehaviour
 
         if(collision.gameObject.CompareTag("vatphamhoimau"))
         {
+            AudioManager.Instance.PlaySFX("heart");
             TakeHeath(1);
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.CompareTag("vatphamhoigiap"))
         {
+            AudioManager.Instance.PlaySFX("vatphamhoigiap");
             TakeArmor();
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.CompareTag("vatphamhoimausieucap"))
         {
+            AudioManager.Instance.PlaySFX("vatphamhoigiap");
+
             TakeHeath(maxHealth);
             Destroy(collision.gameObject);
         }

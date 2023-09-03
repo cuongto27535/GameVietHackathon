@@ -15063,6 +15063,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -393408278, guid: 96d78cc25abb72847a19f587e6cc6001, type: 3}
+    - target: {fileID: 8022949194183629017, guid: 0c2137c3f6f4cbc40804e20eb5040b36, type: 3}
+      propertyPath: m_Text
+      value: LEVEL 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8028845752534447129, guid: 0c2137c3f6f4cbc40804e20eb5040b36, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 15
