@@ -550,7 +550,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.012091041, y: 0.012091041, z: 0}
+  m_ChunkCullingBounds: {x: 0.012820542, y: 0.012820542, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -2001,6 +2001,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasGamePlay 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8022949194183629017, guid: 0c2137c3f6f4cbc40804e20eb5040b36, type: 3}
+      propertyPath: m_Text
+      value: Huong dan
+      objectReference: {fileID: 0}
     - target: {fileID: 9208574994186962374, guid: 0c2137c3f6f4cbc40804e20eb5040b36, type: 3}
       propertyPath: m_Camera
       value: 
@@ -2312,7 +2316,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.012091041, y: 0.012091041, z: 0}
+  m_ChunkCullingBounds: {x: 0.012820542, y: 0.012820542, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
