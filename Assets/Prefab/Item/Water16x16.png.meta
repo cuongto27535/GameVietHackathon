@@ -127,9 +127,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 18
-        width: 44
-        height: 44
+        y: 34
+        width: 10
+        height: 10
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,7 +194,7 @@ TextureImporter:
         width: 8
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,6 +202,27 @@ TextureImporter:
       bones: []
       spriteID: 8a6c65aa17888f54981784fddcce12bf
       internalID: -1632794767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water16x16_4
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 34
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2308596a434f09345992874a53c20336
+      internalID: 2024252706
       vertices: []
       indices: 
       edges: []
@@ -221,6 +242,7 @@ TextureImporter:
       Water16x16_1: -1931054079
       Water16x16_2: 1459001764
       Water16x16_3: -1632794767
+      Water16x16_4: 2024252706
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
