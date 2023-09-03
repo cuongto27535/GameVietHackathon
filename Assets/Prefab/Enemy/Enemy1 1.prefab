@@ -188,11 +188,14 @@ MonoBehaviour:
   repeatTimeUpdatePath: 0.5
   characterSR: {fileID: 5070494592658262727}
   animator: {fileID: 6518122532992640578}
-  isShoot: 0
+  OnDeathEnemy:
+    m_PersistentCalls:
+      m_Calls: []
   bullet: {fileID: 8082283930660671972, guid: ef48338224331654ea966a01982b77bc, type: 3}
   bulletSpeed: 9
-  timeBullet: 1
+  timeBullet: 3
   fireCooldown: 0
+  maxHealthEnemy: 10
   freezeDurationTime: 0
 --- !u!50 &864735635807789116
 Rigidbody2D:
