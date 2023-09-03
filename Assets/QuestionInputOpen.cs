@@ -30,24 +30,24 @@ public class QuestionInputOpen : MonoBehaviour
         
     }
 
-    public void showQuestion(String questionTxt)
+    public void showQuestion(String questionTxt, String answerTxt)
     {
         gameObject.SetActive(true);
         questionText.text = questionTxt;
         insertBtn.onClick.AddListener(() =>
         {
             Debug.Log("Click");
-            checkAnswerInput(answerInput);
+            checkAnswerInput(answerInput, answerTxt);
         });
     }
 
-    private void checkAnswerInput(InputField input)
+    private void checkAnswerInput(InputField input, string answerInput)
     {
         if (input.text.ToString() == "")
         {
             Debug.Log("Nope");
         }
-        else if (input.text.ToString() == "abc")
+        else if (input.text.ToString() == answerInput)
         {
             SceneManager.LoadScene("MenuChonMan");
         }
