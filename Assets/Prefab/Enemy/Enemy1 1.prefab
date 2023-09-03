@@ -195,7 +195,7 @@ MonoBehaviour:
   bulletSpeed: 9
   timeBullet: 3
   fireCooldown: 0
-  maxHealthEnemy: 0
+  maxHealthEnemy: 10
   freezeDurationTime: 0
 --- !u!50 &864735635807789116
 Rigidbody2D:
