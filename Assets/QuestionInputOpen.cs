@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class QuestionInputOpen : MonoBehaviour
@@ -35,19 +36,20 @@ public class QuestionInputOpen : MonoBehaviour
         questionText.text = questionTxt;
         insertBtn.onClick.AddListener(() =>
         {
-            answerInput.onEndEdit.AddListener(checkAnswerInput);
+            Debug.Log("Click");
+            checkAnswerInput(answerInput);
         });
     }
 
-    private void checkAnswerInput(string input)
+    private void checkAnswerInput(InputField input)
     {
-        if (string.IsNullOrEmpty(input))
+        if (input.text.ToString() == "")
         {
             Debug.Log("Nope");
         }
-        else
+        else if (input.text.ToString() == "abc")
         {
-            Hide();
+            SceneManager.LoadScene("MenuChonMan");
         }
     }
 
