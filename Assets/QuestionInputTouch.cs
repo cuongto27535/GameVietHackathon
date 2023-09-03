@@ -21,7 +21,13 @@ public class QuestionInputTouch : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            QuestionInputOpen.Instance.showQuestion("abc");
+            QuestionInputOpen.Instance.showQuestion("Chiếc xe tăng dẫn đầu đánh chiếm Dinh độc lập mang số bao nhiêu?", "390");
+        }
+    }
+    
+    private void OnCollisionExit2D(Collision2D other) {
+        if(other.gameObject.CompareTag("Player")){
+            QuestionInputOpen.Instance.Hide();
         }
     }
 }
