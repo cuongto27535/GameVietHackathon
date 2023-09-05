@@ -5763,7 +5763,7 @@ PrefabInstance:
     - target: {fileID: 7998162653506170618, guid: 1d327273d6ba170419b53ba8c328b586, type: 3}
       propertyPath: fireEffect
       value: 
-      objectReference: {fileID: 3418853884977856468, guid: c4a3e6b53ee340b43bd439c1fa463f5d, type: 3}
+      objectReference: {fileID: 7291027709908082608, guid: 1d9ae0c8cca48124ca85818131a439c1, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
