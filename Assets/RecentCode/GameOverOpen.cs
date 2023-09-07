@@ -35,7 +35,7 @@ public class GameOverOpen : MonoBehaviour
         }));
         replayBtn.onClick.AddListener(new UnityAction((() =>
         {
-            SceneManager.LoadScene("Man2");
+            SceneManager.LoadScene("Man1");
         })));
     }
 }

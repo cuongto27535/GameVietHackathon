@@ -116,9 +116,9 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("vatphamhoimausieucap"))
         {
-            AudioManager.Instance.PlaySFX("vatphamhoigiap");
-
-            TakeHeath(maxHealth);
+            AudioManager.Instance.PlaySFX("heart");
+            currentHealth =10;
+             healthBar.UpdateBar(currentHealth, maxHealth);
             Destroy(collision.gameObject);
         }
     }

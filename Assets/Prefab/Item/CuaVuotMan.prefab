@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3182728225923109883}
   - component: {fileID: 2938414706048797304}
   - component: {fileID: 2494082070362768270}
-  - component: {fileID: 6247996819749767653}
   - component: {fileID: 5926648034957307782}
   m_Layer: 0
   m_Name: CuaVuotMan
@@ -109,19 +108,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6247996819749767653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5247066002379478597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 320b666904b26ff4e913c6d722c3d950, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cavasGoiy: {fileID: 5837431671048436491}
 --- !u!60 &5926648034957307782
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -279,10 +265,5 @@ PrefabInstance:
 --- !u!224 &4653878806193379081 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1625883050838916732, guid: f533b786f5b85254cb4214390cd88b91, type: 3}
-  m_PrefabInstance: {fileID: 6198547485782501749}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5837431671048436491 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 506394603939697278, guid: f533b786f5b85254cb4214390cd88b91, type: 3}
   m_PrefabInstance: {fileID: 6198547485782501749}
   m_PrefabAsset: {fileID: 0}

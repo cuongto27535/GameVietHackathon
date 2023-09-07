@@ -391,4 +391,6 @@ MonoBehaviour:
   firePos: {fileID: 4299652846251288266}
   TimeBtwFire: 9
   bulletForce: 16
-  fireEffect: {fileID: 3418853884977856468, guid: c4a3e6b53ee340b43bd439c1fa463f5d, type: 3}
+  bulletBar: {fileID: 0}
+  maxBullet: 0
+  fireEffect: {fileID: 7291027709908082608, guid: 1d9ae0c8cca48124ca85818131a439c1, type: 3}
